@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="petal" style="left:8%;animation-duration:9s;animation-delay:0s;font-size:0.8rem;">♥</div>
+  <div class="petal" style="left:22%;animation-duration:12s;animation-delay:2s;">♥</div>
+  <div class="petal" style="left:55%;animation-duration:8s;animation-delay:4s;font-size:0.6rem;">♥</div>
+  <div class="petal" style="left:75%;animation-duration:14s;animation-delay:1s;">♥</div>
+  <div class="petal" style="left:90%;animation-duration:10s;animation-delay:6s;font-size:0.7rem;">♥</div>
+
+  <div class="card">
+
+    <header>
+      <p class="eyebrow">Compatibility Insight</p>
+      <h1>Love Calculator</h1>
+      <p class="subtitle">Enter two names and uncover the chemistry<br>between them.</p>
+    </header>
+
+    <div class="ornament">· · ♥ · ·</div>
+
+    <div class="form-group">
+      <label for="your-name">Your Name</label>
+      <input type="text" id="your-name" name="your-name" placeholder="Enter your name" autocomplete="off">
+    </div>
+
+    <div class="form-group">
+      <label for="crush-name">Their Name</label>
+      <input type="text" id="crush-name" name="crush-name" placeholder="Enter their name" autocomplete="off">
+    </div>
+
+    <button class="btn" id="calculate">Reveal Compatibility</button>
+
+    <div id="result-panel">
+      <p class="result-names">
+        <strong id="name-a"></strong> &amp; <strong id="name-b"></strong>
+      </p>
+
+      <svg class="heart-icon" width="36" height="34" viewBox="0 0 36 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 32C18 32 2 22 2 11C2 6.02944 6.02944 2 11 2C13.8 2 16.3 3.4 18 5.6C19.7 3.4 22.2 2 25 2C29.9706 2 34 6.02944 34 11C34 22 18 32 18 32Z" fill="#8B1A2B" stroke="#8B1A2B" stroke-width="1.5"/>
+      </svg>
+
+      <div class="percentage-wrap">
+        <span id="result-percentage">0%</span>
+      </div>
+
+      <p class="result-verdict" id="result-verdict"></p>
+
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <button class="try-again" id="try-again">Try another pair</button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
