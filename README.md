@@ -83,38 +83,6 @@ in your browser.
 
 ---
 
-## Customization
-
-You can easily customize:
-
-### Colors
-
-Edit the CSS variables inside:
-
-```css
-:root {
-  --crimson: #8B1A2B;
-  --gold: #C4965A;
-}
-```
-
-### Verdict Messages
-
-Modify the verdict system inside:
-
-```javascript
-const verdicts = [...]
-```
-
-### Typography
-
-Fonts can be changed through:
-
-* Google Fonts import
-* `font-family` in CSS
-
----
-
 ## Responsive Design
 
 The project is optimized for:
@@ -141,7 +109,7 @@ Possible enhancements:
 ## Live Demo
 
 ```bash
-https:
+https://zippynx.github.io/the-chemistry/
 ```
 
 ---
